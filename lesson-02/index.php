@@ -21,11 +21,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $age = age($_POST['birthdate']);
     if ($age > 21) {
 ?>
-<p>You are 21 or over.</p>       
+<p>You are 21 or over. Today, you are <?php echo intval($age) ?> years old.</p>       
 <?php	
     } else {
 ?>
-<p>You are not 21 yet.<?php echo intval($age) ?></p>        
+<p>You are not 21 yet. Today, you are <?php echo intval($age) ?> years old.</p>        
 <?php
     }       
 } else {
