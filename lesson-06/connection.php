@@ -1,0 +1,5 @@
+<?php
+$dataconnection = new mysqli("localhost", "jscheer_admin", "F0aRtrKV", "jscheer");
+if ($dataconnection->connect_errno) {
+    echo "Failed to connect to MySQL: (" . $dataconnection->connect_errno . ") " . $dataconnection->connect_error;
+}
