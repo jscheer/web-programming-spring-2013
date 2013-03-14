@@ -26,9 +26,9 @@
             <?php
             require('../lesson-08/connection.php');
 
-            $music = $dataconnection->query("SELECT artist_name FROM artist");
+            $music = $dataconnection->query("SELECT artist FROM artists");
             while ($row = $music->fetch_object()) {
-                echo '<p>'.$row->artist_name.'</p>';
+                echo '<p>'.$row->artist.'</p>';
             }
             //$dataconnection->close();
             ?>
